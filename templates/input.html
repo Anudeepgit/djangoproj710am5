@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <script>
+        function checkpassword() {
+            var p=f.t2.value;
+            var  Cp=f.t3.value;
+            if(p==Cp)
+                alert("Password is matched")
+            else
+                alert("Password doesnot match")
+        }
+    </script>
+</head>
+<body bgcolor="aqua">
+<form name="f" action="./insert">
+    Enter UserName:<input type="text" name="t1"><br>
+    Enter Password:<input type="password" name="t2"><br>
+    Reenter Password:<input type="password" name="t3"><br>
+    Enter Mobile Number:<input type="text" name="t4"><br>
+    Enter DOB:<input type="text" name="t5"><br>
+    <input type="submit" name="Submit" value="submit" onclick="checkpassword()">
+</form>
+</body>
+</html>

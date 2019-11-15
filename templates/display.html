@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#6495ed">
+<table border="2">
+    <tr>
+        <th>User</th>
+        <th>Password</th>
+        <th>Confirmpwd</th>
+        <th>Mobile</th>
+        <th>DOB</th>
+    </tr>
+{% for rec in records %}
+    <tr>
+        <td>{{ rec.UserName }}</td>
+        <td>{{ rec.Password }}</td>
+        <td>{{ rec.Confirmpassword }}</td>
+        <td>{{ rec.Mobile }}</td>
+        <td>{{ rec.DOB }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
